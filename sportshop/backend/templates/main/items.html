@@ -1,0 +1,28 @@
+
+
+
+
+{% block content %}
+<div class="container-fluid mt-3">
+    <div class="row">
+        {% if item.image %}
+        <div class="col-md-auto"><img src="{{ item.image.url }}" class="main-image"></div>
+        {% endif %}
+        <div>
+            {% if not items %}
+            <div>Ошибочка</div>
+            {% endif %}
+            <hr>
+            {% for item in items %}
+            <b>{{ item.title }}</b>
+            
+            <p>{{ item.rating }}</p>
+            <p>id: {{ item.id }}</p>
+            <img src="{{ item.image }}">
+            <p>{{ item.producer }}</p>
+            <p>{{ item.price }}</p>
+            <hr>
+        </div>
+            {% endfor %}
+            {% endblock %}
+           
