@@ -1,0 +1,219 @@
+.imag {
+    width: 100vw;
+    height: 55vh;
+    background: no-repeat;
+}
+
+.textInImage {
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    width: 40%;
+    margin-top: 17%;
+    margin-left: 30%;
+    padding: 1rem;
+    /* box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.712); */
+}
+
+.im1 {
+    background-image: url('https://nordski.ru/images/blog/samye-populyarnye-vidy-sporta-v-rossii-3.jpg');
+    background-size: cover;
+    background-position: 0 -30vh;
+}
+
+.im2 {
+    background-image: url('https://img.championat.com/c/1350x759/news/big/p/y/kogda-nuzhno-otdavat-rebjonka-v-sport-rekomendacii_1574181249956324555.jpg');
+    background-size: cover;
+    background-position: 0 -35vh;
+}
+
+.im3 {
+    background-image: url('https://bizneskvartal.ru/wp-content/uploads/2020/11/ncrwy164yfgbg.jpg');
+    background-size: cover;
+    background-position: 0 -7vh;
+}
+
+.im4 {
+    background-image: url('https://www.kreedon.com/wp-content/uploads/2023/01/recovery-sportswear-voguebus-may-22-inline-2.webp');
+    background-size: cover;
+    background-position: 0 -35vh;
+}
+
+.strelkaRight {
+    width: 5vw;
+    position: relative;
+    top: -23vh; left: 91vw;
+}
+
+.strelkaLeft {
+    width: 5vw;
+    position: relative;
+    top: -33vh; left: 2vw;
+    transform: scale(-1, 1); 
+}
+
+.slideContainer {
+    display: flex;
+    width: 400vw;
+    margin: 2rem 0 -6rem 0;
+    position: relative;
+    transition-duration: 1.5s;
+}
+
+.slideContainer1 {
+    left: 0;
+}
+
+.slideContainer2 {
+    left: -100vw;
+}
+
+.slideContainer3 {
+    left: -200vw;
+}
+
+.slideContainer4 {
+    left: -300vw;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+    "s  f"
+    "s  f"
+    "s  sp"
+    "s  sp"
+    "s  sp"
+    "c  sp"
+    "c  sp"
+    "c  sp";
+    margin: 0% 5% 5% 5%;
+    width: 90%;
+    height: 1000px;
+    cursor: pointer;
+}
+
+.shoes {
+    background: rgb(247,116,9);
+    grid-area: c;
+    background-image: url('https://nike-air-force1.com/catalog/view/theme/reebok/img/nike1.png');
+    background-size: 100%;
+    background-position: left 7rem top 2rem;
+    background-repeat: no-repeat;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    transition-duration: 1s;
+}
+
+.shoes:hover {
+    background: rgb(247,116,9);
+    grid-area: c;
+    background-image: url('https://nike-air-force1.com/catalog/view/theme/reebok/img/nike1.png');
+    background-size: 110%;
+    background-position: left -2rem top 2rem;
+    background-repeat: no-repeat;
+    box-shadow: -12px 20px 2px 1px rgba(0, 0, 255, .425);
+}
+
+.food {
+    background-color: blue;
+    grid-area: sp;
+    background-image: url('https://ss.sport-express.ru/userfiles/materials/186/1866659/volga.jpg'); 
+    background-size: auto 100%;
+    background-position: 20% 0;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    transition-duration: 1s;
+}
+
+.food:hover {
+    background-color: blue;
+    grid-area: sp;
+    background-image: url('https://ss.sport-express.ru/userfiles/materials/186/1866659/volga.jpg'); 
+    background-size: auto 120%;
+    background-position: 40% 0;
+    box-shadow: -12px 20px 2px 1px rgba(0, 0, 255, .425);
+}
+
+.cloths {
+    /* background-color: rgb(221, 156, 156); */
+    grid-area: s;
+    background-image: url('https://img.freepik.com/free-photo/people-in-sportswear-exercising-outdoors_23-2148965010.jpg'); 
+    /* background-image: url('https://www.pngplay.com/wp-content/uploads/12/Oversized-T-Shirt-PNG-Photos.png'); */
+    background-size: 100%;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    transition-duration: 1s;
+}
+
+.cloths:hover {
+    /* background-color: rgb(221, 156, 156); */
+    grid-area: s;
+    background-image: url('https://img.freepik.com/free-photo/people-in-sportswear-exercising-outdoors_23-2148965010.jpg'); 
+    /* background-image: url('https://www.pngplay.com/wp-content/uploads/12/Oversized-T-Shirt-PNG-Photos.png'); */
+    background-size: 130%;
+    box-shadow: -12px 20px 2px 1px rgba(0, 0, 255, 0.425);
+    background-position: 50% 0%;
+}
+
+.sports {
+    background-color: purple;
+    grid-area: f;
+    background-image: url('https://sport.insure/upload/iblock/eed/eed7e353f3c765dc8b0ebf20ad599244.jpg');
+    background-size: 120%;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    transition-duration: 1s;
+}
+
+.sports:hover {
+    background-color: purple;
+    grid-area: f;
+    background-image: url('https://sport.insure/upload/iblock/eed/eed7e353f3c765dc8b0ebf20ad599244.jpg');
+    background-size: 120%;
+    box-shadow: -5px 15px 2px 1px rgba(0, 0, 255, .425);
+}
+
+.gridItem {
+    border-radius: 3rem;
+    margin: 2rem;
+    font-size: 3rem;
+    /* transition-duration: 3s; */
+}
+
+
+.gridItemInCloths {
+    margin: 3rem 0;
+    color: white;
+    position: relative;
+    top: 63%;
+    right: -7%;
+    width: fit-content;
+    background-color: rgb(27, 27, 27);
+    padding: 0.5rem 1.5rem ;
+    border-radius: 1rem;
+}
+.gridItemInShoes {
+    margin: 3rem 0;
+    color: white;
+    position: relative;
+    top: 55%;
+    right: -7%;
+    width: fit-content;
+}
+.gridItemInFood {
+    margin: 3rem 0;
+    color: white;
+    position: relative;
+    top: 70%;
+    right: -10%;
+    width: fit-content;
+}
+.gridItemInSports {
+    margin: 3rem 0;
+    color: white;
+    position: relative;
+    top: 2%;
+    right: 3%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 1rem;
+    width: fit-content;
+    padding: 0 7%;
+}

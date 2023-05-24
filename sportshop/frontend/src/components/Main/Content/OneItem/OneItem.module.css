@@ -1,0 +1,208 @@
+.picture {
+    width: 500px;
+    height: 500px;
+}
+
+.name {
+    font-size: 2rem;
+    text-align: left;
+    padding: 0 0 0 10rem;
+    margin: 1.5rem 0;
+}
+
+.all_rating  {
+    background-repeat: repeat;
+    font-size: 1.7rem;
+    display: inline;
+    margin: 0 0 0 3rem;
+}
+
+.flex_container{
+    display: flex;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.pictures_container {
+    display: grid;
+    width: 40%;
+    grid-template-areas: 
+    "b a a a"
+    "c a a a"
+    "d a a a";
+    gap: 2rem;
+    margin: 0 0 3rem 3rem;
+}
+
+.pictures_container img:hover {
+    border: solid rgb(189, 189, 189) 1px;
+    box-shadow: 2px 2px 2px rgba(105, 105, 105, 0.527);
+    transition-duration: 1s;
+    transition-property: box-shadow;
+}
+
+.pictures_container img {
+    transition-property: box-shadow;
+}
+
+.main_picture {
+    grid-area: a;
+    border-radius: 20px;
+    border: solid rgb(216, 216, 216) 1px;
+    box-shadow: 2px 2px 2px rgba(145, 145, 145, 0.527);
+    height: 65vh;
+    width: 30vw;
+    object-fit: contain;
+    transition-duration: 1s;
+}
+
+.first_picture {
+    grid-area: b;
+    border-radius: 20px;
+    border: solid rgb(216, 216, 216) 1px;
+    box-shadow: 2px 2px 2px rgba(145, 145, 145, 0.527);
+    object-fit: contain;
+    height: 19vh;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.second_picture {
+    grid-area: c;
+    border-radius: 20px;
+    border: solid rgb(216, 216, 216) 1px;
+    box-shadow: 2px 2px 2px rgba(145, 145, 145, 0.527);
+    object-fit: contain;
+    height: 19vh;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.fhird_picture {
+    grid-area: d;
+    border-radius: 20px;
+    border: solid rgb(216, 216, 216) 1px;
+    box-shadow: 2px 2px 2px rgba(145, 145, 145, 0.527);
+    object-fit: contain;
+    height: 19vh;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.sizes_container {
+    display: grid;
+    grid-template-columns: 70px 70px;
+    width: fit-content;
+    height: fit-content;
+    gap: 1rem;
+    margin: 0 0 0 2rem;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: rgb(218, 218, 218) solid 1px;
+    box-shadow: 2px 2px 2px rgba(145, 145, 145, 0.527);
+}
+
+.size {
+    background-color: rgb(233, 233, 233);
+    border-radius: 20%;
+    cursor: pointer;
+    font-size: 1.4vw;
+    padding: 1rem 0;
+}
+
+.size_on {
+    background-color: rgb(212, 212, 212);
+    border-radius: 20%;
+    cursor: pointer;
+    font-size: 1.4vw;
+    padding: 1rem 0;
+    border: rgb(90, 90, 90) solid 1px;
+    /* box-shadow: 2px 2px 2px rgba(145, 145, 145, 0.527); */
+}
+
+.buy_area {
+    width: 40%;
+    /* background-color: grey; */
+    margin: 0 2rem;
+    /* border-radius: 20px;
+    border: rgb(218, 218, 218) solid 1px;
+    box-shadow: 2px 2px 2px rgba(145, 145, 145, 0.527); */
+}
+
+.buy {
+    width: 100%;
+    /* background-color: grey; */
+    /* margin: 0 2rem; */
+    border-radius: 20px;
+    border: rgb(218, 218, 218) solid 1px;
+    box-shadow: 2px 2px 2px rgba(145, 145, 145, 0.527);
+}
+
+.price {
+    font-size: 2.5vw;
+    margin: 1rem 0 0 1.5rem;
+    text-align: left;
+}
+
+.buy_button {
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-size: 2vw;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem 1rem 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.discription {
+    font-size: 1.5vw;
+    text-align: justify;
+    margin: 1rem;
+}
+
+.review {
+    text-align: left;
+    border: rgb(218, 218, 218) solid 1px;
+    box-shadow: 2px 2px 2px rgba(145, 145, 145, 0.527);
+    font-size: 1.5vw;
+    margin: 1rem 4rem;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.raitng {
+    display: inline;
+    margin: 0 0 0 1rem;
+}
+
+.sender {
+    display: inline;
+}
+
+.message {
+    width: 85%;
+    margin: 0.3rem;
+    border: rgb(218, 218, 218) solid 1px;
+    box-shadow: 2px 2px 2px rgba(145, 145, 145, 0.527);
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: rgb(233, 233, 233);
+    text-align: justify;
+    
+}
+
+.otzivi {
+    font-size: 2vw;
+    text-align: left;
+    margin: 0 0 0 10rem;
+}
+
+.review_left {
+    width: 15%;
+}
+
+.review_flex {
+    display: flex;
+}
