@@ -56,11 +56,41 @@ class ItemView(APIView):
         print(item_sizes)
         return Response(output)
     
-    # def post(self, request):
-    #     serializer = ItemSerializer(data=request.data)
-    #     if serializer.is_valid(raise_exception=True):
-    #         serializer.save()
-    #         return Response(serializer.data)
+
+class ItemsView(APIView):
+    def get(self, request, url_tags, ordering):
+        items_with_url_tags = []
+        items = []
+        url_tags = url_tags.split(':')
+        for url_tag in url_tags:
+            for item_tag in ItemTag.objects.all():
+                if item_tag.tag.name == url_tag:
+                    items_with_url_tags.append(item_tag.item)
+        for item_with_url_tag in items_with_url_tags:
+            if items_with_url_tags.count(item_with_url_tag) == len(url_tags):
+                items.append(item_with_url_tag)
+        if ordering != 'default':
+            if ordering == 'rating':
+                items = sorted(set(items), key=attrgetter('rating'), reverse=True)
+            elif ordering == 'priceMax':
+                items = sorted(set(items), key=attrgetter('price'), reverse=True)
+            elif ordering == 'priceMin':
+                items = sorted(set(items), key=attrgetter('price'), reverse=False)
+        output = []
+        for item in items:
+            item_dict = {
+                'id': item.id,
+                'name': item.title,
+                'producer': item.producer,
+                'price': item.price,
+                'rating': item.rating,
+                'picture': item.image,
+            }
+            output.append(item_dict)
+        print(output)       
+        print('кайф')       
+        return Response(output)
+    
 
 def item(request, pk):
     item = Item.objects.get(pk=pk)
@@ -98,6 +128,11 @@ def items(request, url_tags, ordering):
 
 
 
+    # def post(self, request):
+    #     serializer = ItemSerializer(data=request.data)
+    #     if serializer.is_valid(raise_exception=True):
+    #         serializer.save()
+    #         return Response(serializer.data)
 
     
 
